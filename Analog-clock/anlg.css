@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+    ;
+}
+.analog-clock{
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+    border-radius:50%;
+    border: 10px  double  rgba(145, 23, 202, 0.459);
+    position: relative;
+}
+.analog-clock ::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 16, 16, 0.308);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+.analog-clock::before{
+    content:'Thiru Clock';
+    color: rgb(43, 173, 224);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size:20px;
+    transform: translate(-50%,-50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.number{
+    --rotate:0;
+    position: absolute;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 23px;
+    transform: rotate(var(--rotate));
+}
+
+.number-1{--rotate:30deg;}
+.number-2{--rotate:60deg;}
+.number-3{--rotate:90deg;}
+.number-4{--rotate:120deg;}
+.number-5{--rotate:150deg;}
+.number-6{--rotate:180deg;}
+.number-7{--rotate:210deg;}
+.number-8{--rotate:240deg;}
+.number-9{--rotate:270deg;}
+.number-10{--rotate:300deg;}
+.number-11{--rotate:330deg;}
+
+
+.needle{
+    --rotation:0;
+    position: absolute;
+    width: 10px;
+    height: 40%;
+    bottom: 50%;
+    left: 50%;
+    z-index: 8;
+    border: 1px solid grey;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin:bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.sec{
+    width: 3px;
+    height: 40%;
+    background-color: red;
+    /* --rotation:30; */
+}
+.min{
+    width: 7px;
+    height: 35%;
+    background-color: black;
+    /* --rotation:60; */
+
+}
+.hrs{
+    width: 10px;
+    height: 25%;
+    background-color: rgb(191, 253, 21);
+    /* --rotation:90; */
+
+}
