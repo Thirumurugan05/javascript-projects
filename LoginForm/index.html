@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginForm</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="form-header">
+            <div class="titles">
+                <div class="title-login">Login</div>
+                <div class="title-register">Register</div>
+            </div>
+        </div>
+                    <!--Login Form-->
+            <form action="#" class="login-form" autocomplete="off">
+                <div class="input-box">
+                    <input type="text" class="input-field" id="log-email" required>
+                    <label for="log-email" class="label label1">Email</label>
+                    <i class='bx  bx-envelope icon'></i> 
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" id="log-pass" required>
+                    <label for="log-pass" class="label">Password</label>
+                    <i class="fa-solid fa-lock icon"></i>
+                </div>
+                <div class="form-cols">
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <button class="btn-submit" id="SignInBtn">SignIn <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                </div>
+                <div class="switch-form">
+                    <span>Don't have an account? <a href="#" onclick="registerFunction()">Register<i class="fa-solid fa-id-card"></i></a> </span>
+                </div>
+
+            </form>
+
+
+
+            <!--Register Form-->
+            <form action="#" class="register-form form2" autocomplete="off">
+
+                   <div class="input-box">
+                    <input type="text" class="input-field" id="reg-name" required>
+                    <label for="reg-name" class="label label1">Name</label>
+                     <i class="fa-solid fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="reg-email" required>
+                    <label for="reg-email" class="label label1">Email</label>
+                    <i class='bx  bx-envelope icon'></i> 
+                </div>     
+                <div class="input-box">
+                    <input type="password" class="input-field" id="reg-pass" required>
+                    <label for="reg-pass" class="label">Password</label>
+                    <i class="fa-solid fa-lock icon"></i>
+                </div>
+                <div class="form-cols">
+                    <div class="col-1">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">I agree to terms & conditions</label>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="input-box">
+                    <button class="btn-submit" id="SignUpBtn">SignUp <i class="fa-solid fa-user-plus"></i></button>
+                </div>
+                <div class="switch-form">
+                    <span>Already have an account? <a href="#" onclick="loginFunction()">Login<i class="fa-solid fa-id-card"></i></a> </span>
+                </div>
+
+            </form>
+
+    </div>
+
+    
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

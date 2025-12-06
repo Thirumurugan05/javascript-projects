@@ -1,0 +1,42 @@
+*{
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+}
+
+#container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,200px);
+   gap: 24px;
+   padding: 10px;
+}
+
+.sticky{
+    height: 100px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+.btn-add{
+    padding: 20px;
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+   background-color: lightpink;
+   border: none;
+}
+
+.btn-add:hover{
+    background-color: lightcoral;
+}
+
+

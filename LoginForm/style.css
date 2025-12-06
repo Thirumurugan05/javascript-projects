@@ -1,0 +1,238 @@
+:root{
+    --primary-color:#0d1936;
+    --secondary-color:#535354;
+    --shadow-color:rgba(0,0,0,0.1);
+    --white-color:#fff;
+    --backround-color:#efefef;
+    --black-color:#000;
+    --input-border-color:#e3e4e6;
+    --transition-3s:0.3s;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black-color);
+    transition: var(--transition-3s);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vw; */
+    background-color: var(--backround-color);
+}
+
+.wrapper{
+    position: relative;
+    background-color: var(--white-color);
+    width: 430px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 120px 32px 64px;
+    border: 1px solid  var(--primary-color);
+    box-shadow: 0 8px 15px var(--shadow-color);
+    transition: var(--transition-3s);
+}
+.form-header{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: var(--transition-3s);
+}
+
+
+
+
+
+.titles{
+position: relative;
+}
+
+.title-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white-color);
+    font-size: 24px;
+    transition: var(--transition-3s);
+}
+
+
+
+.title-register{
+    top: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+
+}
+
+
+.form-header::before{
+    left: -30px;
+    box-shadow: 15px 0 0 var(--primary-color);
+    border-top-right-radius: 50%;
+    box-shadow: 15px 0 0 var(--primary-color);
+}
+
+.form-header::after{
+    right: -30px;
+    border-top-left-radius: 50%;
+    box-shadow: -15px 0 0 var(--primary-color);
+}
+
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--black-color);
+    padding: 0 20px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 30px;
+    outline: none;
+    transition: var(--transition-3s);
+}
+
+.input-field:focus{
+    border: 1px solid var(--primary-color);
+}
+
+.label{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translate(-50%,-50%);
+    color: var(--secondary-color);
+    transition: 0.2s;
+    cursor: text;
+    letter-spacing: 0.55px;
+}
+
+
+.icon{
+    position: absolute;
+    font-size: 20px;
+    top: 38%;
+    right: 25px;
+}
+
+
+.label1{
+   position: absolute;
+   left: 42px;
+}
+
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    top: 0;
+    font-size: 14px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+.input-field:valid ~ .label{
+    color: var(--secondary-color);
+}
+
+.form-cols{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+.col-1{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-cols .col-2 a{
+     color: var(--primary-color);
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition-3s);
+}
+
+.btn-submit:hover{
+    gap: 15px;
+}
+
+.switch-form span a i{
+  padding: 4px;
+}
+
+.switch-form{
+    text-align: center;
+}
+.switch-form span a{
+    font-weight:500;
+    margin-left: 20px;
+}
+
+
+.form2{
+    background-color: red;
+    position: absolute;
+    top: 120px;
+    left: 110%;
+    width: 100%;
+    right:0px;
+    border-radius: 12px;
+    bottom: 0;
+    display: none;
+}
+
+
+
+
