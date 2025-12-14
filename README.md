@@ -19,6 +19,9 @@ A small notes app where users can create, delete, and store notes.
 ### 4. **Digital Clock**
 A real-time digital clock displaying hours, minutes, and seconds.
 
-### 5. **More Mini Projects Coming…**
+### 5. **Tic Tac Toe Game**
+A real-time its double sider game man vs computer.
+
+### 6. **More Mini Projects Coming…**
 I will continue adding new mini-projects as I learn new concepts.
 
