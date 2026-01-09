@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(124,154,167);
+    border-radius: 10px;
+}
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(204,200,200);
+    padding: 10px 15px;
+    text-align: left;
+}
+tr:nth-child(even), table.list thead>tr{
+    background: rgb(204, 200,200);
+}
+
+input[type="text"],input[type="number"]{
+    padding: 8px 5px;
+    margin: 5px 0 10px;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.form_action--button{
+   padding: 10px;
+}
+
+#submit{
+    padding: 5px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+  
+   
+}
+#reset{
+    padding: 5px 20px;
+    border: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}

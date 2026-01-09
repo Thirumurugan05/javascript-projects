@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd-Operation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                    <div>
+                        <label for="productCode">Product Code</label>
+                        <input type="text" name="productCode" id="productCode" placeholder="Enter The Product Code" required>
+                    </div>
+                    <div>
+                        <label for="Product">Product Name</label>
+                        <input type="text" name="Product" id="Product" placeholder="Enter Product Name" required>                     
+                    </div>
+                    <div>
+                        <label for="PerPrice">Product Price</label>
+                        <input type="number" name="PerPrice" id="PerPrice" placeholder="Enter The Price" required>                     
+                    </div>
+                    <div>
+                        <label for="PerPrice">Product Quantity</label>
+                        <input type="number" name="ProductQuantity" id="ProductQuantity" placeholder="Enter The Qnty" required>                     
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="submit" id="submit">
+                        <input type="reset" value="reset" id="reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table  class="list" id="store-list">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Product Name</th>
+                                <th>Product Quantity</th>
+                                <th>Product Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be inserted here dynamically using JavaScript -->
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
