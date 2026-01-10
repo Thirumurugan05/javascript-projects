@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.input-container{
+    width: 300px;
+    border: 1px solid rgb(219, 186, 186);
+    display: flex;
+    align-items: center;
+
+
+}
+.input-container input{
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 10px;
+   font-size: 1rem;
+}
+
+i{
+    padding: 10px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.error{
+    border-color: red;
+}
+.good{
+    border-color: green;
+}
+
+.msg{
+    display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: red;
+}
