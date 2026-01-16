@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Products</title>
+    <!-- <base href="images/"> -->
+
+
+     <!-- css link -->
+      <link rel="stylesheet" href="./style.css">
+
+        <!-- other links -->
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="serach" placeholder="Search The Products..." id="search-input">
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+           <button class="button-value" onclick="filterProducts('All')">All</button>
+           <button class="button-value" onclick="filterProducts('TopWear')">TopWear</button>
+              <button class="button-value" onclick="filterProducts('BottomWear')">BottomWear</button>
+           <button class="button-value" onclick="filterProducts('Jacket')">Jacket</button>
+           <button class="button-value" onclick="filterProducts('Watch')">Watch</button>
+        </div>
+
+        <div id="products">
+            <!-- products will be shown here -->
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
