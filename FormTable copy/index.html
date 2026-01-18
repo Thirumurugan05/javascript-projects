@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Js</title>
+
+
+  <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="onFormSubmit(event)" autocomplete="off">
+                    <div>
+                        <label for="">Full Name</label>
+                    <input type="text" name="fullName" id="fullname">
+                    </div>
+                    <div>
+                        <label for="">Emp Code</label>
+                    <input type="text" name="EmpCode" id="empcode">
+                    </div>
+                    <div>
+                        <label for="">Salary</label>
+                    <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label for="">City</label>
+                    <input type="text" name="city" id="city">
+                    </div>
+
+                    <div class="form-action-buttons">
+                        <input type="submit" value="submit" id="btn_submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead >
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Emp Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Edit / Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
