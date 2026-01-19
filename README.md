@@ -1,27 +1,51 @@
-# JavaScript Mini Projects
+# JavaScript Mini Projects 🚀
 
-This repository contains a collection of small JavaScript projects that I built while practicing front-end development.  
-Each project focuses on improving core skills like DOM manipulation, events, styling, and basic JavaScript logic.
+A collection of **JavaScript mini projects** built to improve my front-end skills through real practice.
+
+These projects focus on:
+- DOM Manipulation
+- JavaScript logic building
+- Events & interactivity
+- UI design using HTML + CSS
+- Local Storage
 
 ---
 
-## 📁 Projects Included
+## 📌 Projects List
 
-### 1. **Login Form**
-A simple login and register UI created using HTML, CSS, and JavaScript.
+| # | Project | Description | Folder |
+|---|---------|-------------|--------|
+| 1 | Alarm Clock | Set alarm and get alert when time matches | `Alarm-Clock/` |
+| 2 | Analog Clock | Real-time analog clock using Date API | `Analog-clock/` |
+| 3 | Calculator App | Basic calculator using JS logic | `CALCULATOR-APP/` |
+| 4 | Digital Clock | Live digital clock showing time | `DIGIT-CLOCKER/` |
+| 5 | Double Slider | Interactive slider UI practice | `DoubleSlider/` |
+| 6 | Login Form | Simple login/register UI | `LoginForm/` |
+| 7 | Navbar | Responsive navigation UI | `NavBar/` |
+| 8 | Sticky Notes | Notes app with Local Storage | `StickyNotes-Ls/` |
+| 9 | Stopwatch | Start/Stop/Reset stopwatch | `Stop-Watch/` |
+| 10 | Tic Tac Toe | Game logic + interactive UI | `Tic-Tac-Game/` |
+| 11 | Alien Fights ⚔️ | Battle game (player vs player) | `AlienFights/` |
 
-### 2. **Alarm Clock**
-A digital alarm clock where the user can set an alarm and receive an alert when the time matches.
+---
 
-### 3. **Sticky Notes**
-A small notes app where users can create, delete, and store notes.
+## 🛠️ Tech Stack
+- HTML  
+- CSS  
+- JavaScript  
 
-### 4. **Digital Clock**
-A real-time digital clock displaying hours, minutes, and seconds.
+---
 
-### 5. **Tic Tac Toe Game**
-A real-time its double sider game man vs computer.
+## 🎯 Goal
+I will continue adding more mini projects while learning advanced JavaScript and front-end development.
 
-### 6. **More Mini Projects Coming…**
-I will continue adding new mini-projects as I learn new concepts.
+---
 
+## 👤 Author
+**Thirumurugan V**  
+🌐 Portfolio: https://thiruking17.netlify.app/  
+💻 GitHub: https://github.com/Thirumurugan05  
+🔗 LinkedIn: https://www.linkedin.com/in/thirumurugan-v-7aa197226/
+
+---
+⭐ If you find this repository useful, consider giving it a star!
