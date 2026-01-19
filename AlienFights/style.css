@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #0b0f1a;
+  color: white;
+}
+
+.fight-main{
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title{
+  font-size: 34px;
+  font-weight: 900;
+  color: #d4af37;
+}
+
+/* ===== layout: fight + cart side by side on laptop ===== */
+@media(min-width: 1024px){
+  .fight-main{
+    padding: 30px 70px;
+  }
+}
+
+/* ===== fight section ===== */
+.fight-section{
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,175,55,0.25);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.fight-controls{
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.fight-controls select{
+  flex: 1;
+  min-width: 220px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #d4af37;
+  outline: none;
+}
+
+.fight-controls button{
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  background: #d4af37;
+  color: #0b0f1a;
+}
+
+.fight-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+@media(min-width: 900px){
+  .fight-cards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.alien-card{
+  background: white;
+  color: #0b0f1a;
+  border-radius: 16px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.alien-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.alien-card h3{
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.stats{
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.bar{
+  height: 10px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.fill{
+  height: 100%;
+  background: #0b0f1a;
+}
+
+.buy-btn{
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  background: #0b0f1a;
+  color: #d4af37;
+}
+
+.result{
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(212,175,55,0.4);
+  background: rgba(212,175,55,0.2);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.video-box{
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid rgba(212,175,55,0.45);
+}
+
+/* ===== cart section ===== */
+.cart-section{
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,175,55,0.25);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.cart-section h2{
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #d4af37;
+}
+
+.cart-items{
+  display: grid;
+  gap: 10px;
+  max-height: 320px;
+  overflow: auto;
+  padding-right: 5px;
+}
+
+.cart-item{
+  width: 100%;
+  background: white;
+  color: #0b0f1a;
+  border-radius: 14px;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart-item img{
+  width: 90px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-info h4{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.cart-info p{
+  font-weight: 900;
+  margin-top: 4px;
+}
+
+.qty-btns{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.qty-btns button{
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.dec{ background: #0b0f1a; color: white; }
+.inc{ background: #d4af37; color: #0b0f1a; }
+
+.total{
+  margin-top: 12px;
+  background: #0b0f1a;
+  color: #d4af37;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alien Fight Game</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+
+<body>
+
+  <main class="fight-main">
+    <h1 class="title">Alien Fight Game ⚔️</h1>
+
+    <!-- FIGHT SECTION -->
+    <section class="fight-section">
+        
+      <div class="fight-controls">
+        <select id="alien1"></select>
+        <select id="alien2"></select>
+        <button id="fightBtn">FIGHT</button>
+      </div>
+
+      <div class="fight-cards">
+        <div class="alien-card" id="card1"></div>
+        <div class="alien-card" id="card2"></div>
+      </div>
+
+      <div class="result" id="result">Choose 2 aliens and click FIGHT!</div>
+
+    </section>
+
+    <!-- CART SECTION -->
+    <section class="cart-section">
+      <h2>Cart 🛒</h2>
+      <div class="cart-items"></div>
+      <div class="total">Total: ₹0</div>
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
