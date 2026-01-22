@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Shop</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--CDN_LINKS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- FONT-LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lilita+One&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <!-- header -->
+        <div class="header">
+            <div class="header-container">
+                <div class="header-title">
+                    <i class="fa-solid fa-mobile"></i>
+                    <h1>Mobile Phones</h1>
+                </div>
+                <!-- search & sort -->
+                <div class="search-sort-container">
+                    <div class="search-container">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <input type="text" placeholder="Search Phones..." class="search-input" id="searchInput" />
+                    </div>
+
+                    <div class="controls">
+                        <select class="sort-select" id="sortSelect">
+                            <option value="name">Sort By</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Rating: High to Low</option>
+                        </select>
+                        <button class="filter-button" id="filterButton">
+                            <i class="fa-solid fa-filter"></i>Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--filter SideBar-->
+
+        <div class="filter-sidebar " id="filterSidebar">
+            <div class="filter-content">
+                <div class="filter-header">
+                    <h3>filter Products</h3>
+                    <button class="close-filter" id="closeFilterButton"><i class="fa-solid fa-xmark clsebtn"></i></button>
+                </div>
+                <hr>
+
+                <div class="filter-section">
+                    <h4>Price Range</h4>
+                    <div class="price-range">
+                        <input type="range" min="0" max="125000" step="1000" value="0" class="price-slider" id="priceMin" />
+                    <input type="range" min="0" max="125000" step="1000" value="125000" class="price-slider" id="priceMax" />
+                    </div>
+                <div class="price-labels">
+                    <span class="price-label" id="priceMinLabel">₹0</span>
+                    <span class="price-label" id="priceMaxLabel">₹125000</span>
+                </div>
+                </div>
+            </div>
+           
+            <div class="filter-section">
+                <h4>Brands</h4>
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Apple" class="brand-filter" id="brandApple" /><span>Apple</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Samsung" class="brand-filter" id="brandSamsung" /><span>Samsung</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Xiaomi" class="brand-filter" id="brandXiaomi" /><span>Xiaomi</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="OnePlus" class="brand-filter" id="brandOnePlus" /><span>OnePlus</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Google" class="brand-filter" id="brandGoogle" /><span>Google</span>
+                </label>
+              </div>
+              <br>
+              <div class="checkbox-features">
+                <h4>Features</h4>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="5G" class="feature-filter" id="feature5G" /><span>5G Support</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="AMOLED" class="feature-filter" id="featureAMOLED" /><span>Super AMOLED Display</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Fast Charging" class="feature-filter" id="featureFastCharging" /><span>Fast Charging</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Water Resistant" class="feature-filter" id="featureWaterResistant" /><span>Water Resistant</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Wireless Charging" class="feature-filter" id="featureWirelessCharging" /><span>Wireless Charging</span>
+                </label>
+
+              </div>
+
+            </div>
+
+        </div>
+        <!--Main Content-->
+        <div class="main-content">
+            <div class="results-found" id="resultsCount">19 phones found</div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically inserted here -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/photo-1598327105666-5b89351aff97.avif" alt="mobile" width="200px"
+                            height="200px" class="product-image" />
+                        <div class="saving-badge">Save $200</div>
+                    </div>
+
+                    <div class="product-content">
+                        <h3 class="product-name">Samsung Galaxy S21</h3>
+                        <p class="product-specs">128GB + Natural Titanium</p>
+
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star starEmpty"></i>
+                            </div>
+                            <div class="rating-text">4.8(2847)</div>
+                        </div>
+
+                        <div class="product-features">
+                            <span class="feature-badge">5G Support</span>
+                            <span class="feature-badge">Super AMOLED Display</span>
+                            <span class="more-features">+2</span>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="current-price">₹79999</span>
+                                <span class="original-price">₹99999</span>
+                            </div>
+                            <button class="view-details-button">View Details</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--filterOverlay-->
+        <div class="filter-overlay" id="filterOverlay">
+            
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
