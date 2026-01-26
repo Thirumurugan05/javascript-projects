@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: rgb(255, 248, 240);
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.para{
+    margin-top: -2rem;
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+
+.pass_item{
+    margin-top: 50px;
+    padding: 20px;
+    width: 350px;
+}
+
+.pass_item input{
+    width: 290px;
+    padding: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: blanchedalmond;
+    position: relative;
+
+}
+.pass_item input::placeholder{
+    font-size: 18px;
+    color: grey;
+    opacity: 1;
+   
+}
+
+.pass_item i{
+    position: absolute;
+    margin-left: -38px;
+    margin-top: 22px;
+    font-size: 22px;
+}
+
+#btn{
+    margin-top: 40px;
+    width: 12rem;
+    padding: 18px;
+    border-radius: 20px;
+}
