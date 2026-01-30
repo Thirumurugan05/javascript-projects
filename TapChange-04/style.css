@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: grey;
+    width: 70%;
+    margin: auto;
+    height: 600px;
+}
+
+.nav-btn{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    font-size: 0.99rem;
+    font-weight: bold;
+}
+
+.store-para{
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 13px;
+    text-transform: capitalize;
+}
+
+
+.tap-content p{
+    margin-top: 30px;
+    display: none;
+}
+
+
+ .active{
+    background-color: lightblue;
+}
+
